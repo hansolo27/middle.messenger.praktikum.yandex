@@ -1,0 +1,30 @@
+@import 'variables.scss';
+
+html {
+    font-size: 0.39vw;
+    @media only screen and (max-width: $breakpoints-full-hd){
+        font-size: 0.52vw;
+    }
+    @media only screen and (max-width: $grid-breakpoints-lg){
+        font-size: 0.62vw;
+    }
+    @media only screen and (max-width: $grid-breakpoints-md){
+        font-size: 2.6vw;
+    }
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    background: none;
+}
+body {
+  font-size: 2.4rem;
+  min-height: 100vh;
+  font-family: 'inter';
+  color: $text-color;
+}

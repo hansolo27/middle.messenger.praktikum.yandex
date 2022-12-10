@@ -1,0 +1,14 @@
+{{!< auth}}
+
+<form class="card registration">
+  <h3 class="card__title">Регистрация</h3>
+  {{> "text-field/text-field" type="email" placeholder="Почта" label="Почта" name="email" error="" class="filled"}}
+  {{> "text-field/text-field" type="text" placeholder="Логин" label="Логин" name="login" error="" class="filled"}}
+  {{> "text-field/text-field" type="text" placeholder="Имя" label="Имя" name="name" error="Некорректная длина" class="error filled"}}
+  {{> "text-field/text-field" type="text" placeholder="Фамилия" label="Фамилия" name="second_name" error="" class="filled"}}
+  {{> "text-field/text-field" type="tel" placeholder="Телефон" label="Телефон" name="tel" error="" class="filled"}}
+  {{> "text-field/text-field" type="password" placeholder="Пароль" label="Пароль" name="password" error="" class="filled"}}
+  {{> "text-field/text-field" type="password" placeholder="Пароль(еще раз)" label="Пароль" name="confirmPassword" error="" class="filled"}}
+  {{> "btn/btn" type="button" text="Зарегестрироваться" class="primary filled" }}
+  {{> "btn/btn" type="button" text="Войти" }}
+</form>
