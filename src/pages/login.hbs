@@ -1,0 +1,9 @@
+{{!< auth}}
+
+<form class="card login">
+  <h3 class="card__title">Вход</h3>
+  {{> "text-field/text-field" type="text" placeholder="Логин" label="Логин" name="login" error="" class="filled"}}
+  {{> "text-field/text-field" type="password" placeholder="Пароль" label="Пароль" name="password" error="Некорректный пароль" class="error filled"}}
+  {{> "btn/btn" type="button" text="Войти" class="primary filled" }}
+  {{> "btn/btn" type="button" text="Нет аккаунта?" }}
+</form>
